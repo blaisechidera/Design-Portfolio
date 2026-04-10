@@ -1,0 +1,190 @@
+#gallery {
+    width: 100%; /* Make the section full width */
+    display: none; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding-top: 20px; /* Add space at the top */
+    padding-bottom: 20px; /* Add space at the bottom */
+    margin-bottom: 150px !important;
+
+    position: absolute;
+    top: 70px;
+    left: -100vw;
+    transition: all 0.8s ease;
+ }
+
+ #gallery.slideIn {
+    left: 0;
+    display: flex !important;
+ }
+
+
+#gallery-container {
+    /* width: 100%; */
+    margin: 2rem auto; 
+ 
+}
+
+#gallery-container > h2 {
+    color: #000000; /* Set heading color to orange */
+    padding: 5px 10px; /* Add padding around the heading */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 700; /* Set font weight to bold */
+    font-size: 35px; /* Set font size */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 10px;
+}
+
+
+#gallery-grid {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    grid-template-areas: 
+    "s1 s1 s2 s3"
+    "s5 s4 s4 s3"
+    "s6 s4 s4 s8"
+    "s6 s7 s9 s9";
+
+    grid-template-rows: 200px repeat(2, 100px) 200px;
+    grid-template-columns: 200px repeat(2, 100px) 200px;
+
+    /* grid-template-rows: 100px 5px 50px 50px 50px 50px 50px 100px;
+    grid-template-columns: 100px 5px 50px 50px 50px 50px 50px 100px; */
+  
+    grid-gap: 10px; /* Adjust the gap size according to your preference */
+
+}
+  
+
+
+.gallery-item1 {
+    background-color: antiquewhite;
+    grid-area: s1;
+
+
+}
+
+.gallery-item2 {
+    background-color: aqua;
+    grid-area: s2;
+
+}
+
+.gallery-item3 {
+    background-color: aquamarine;
+    grid-area: s3;
+    
+
+}
+
+.gallery-item4 {
+    background-color: blue;
+    grid-area: s4;
+
+}
+
+.gallery-item5 {
+    background-color: brown;
+    grid-area: s5;
+    
+
+}
+
+.gallery-item6 {
+  background-color: blueviolet;
+  grid-area: s6;
+
+
+}
+
+.gallery-item7 {
+  background-color: burlywood;
+  grid-area: s7;
+
+
+}
+
+.gallery-item8 {
+  background-color: chartreuse;
+  grid-area: s8;
+
+}
+
+.gallery-item9 {
+  background-color: chocolate;
+  grid-area: s9;
+
+}
+
+  
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.5);
+  }
+  
+  figure {
+    position: relative;
+    overflow: hidden;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+
+/* Media query for mobile screens with a breakpoint of 650px */
+@media (max-width: 650px) {
+
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(9, 300px);
+
+    grid-template-areas: 
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "s4 s4"
+    "s5 s5"
+    "s6 s6"
+    "s7 s7"
+    "s8 s8"
+    "s9 s9";
+  }
+
+  footer {
+    width: 100%; /* Full width */
+    position: fixed; /* Fixed position */
+    bottom: 0; /* Align to the bottom */
+    background-color: #040805; /* Your desired background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for aesthetic spacing */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+}
+
+  

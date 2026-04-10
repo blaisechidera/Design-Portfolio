@@ -1,0 +1,1033 @@
+/* Media query for mobile screens  with a breakpoint of 650px*/
+@media (max-width: 650px) {
+
+    body {
+        /* Set body to take up the full width and height of the viewport */
+        width: 100%;
+        height: 100vh; /* Ensure body takes up the full viewport height */
+        /* Set body to flex container to make footer stick to the bottom */
+        display: flex;
+        flex-direction: column;
+        /* Set a background image and font family */
+        background-image: url(../assets/images/Background.jpg);
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        /* Remove default margin and padding */
+        margin: 0;
+        padding: 0;
+        /* Set a background color and use border-box for box-sizing */
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+    }
+    
+    /* General Header Styles */
+    
+    header {
+        /* Set header to take up full width, with a fixed height and a border at the bottom */
+        width: 100%;
+        height: 90px;
+        border-bottom: #F28705 solid 1px;
+        background-color: #040805;
+        /* Use flexbox for layout, space-between for spacing, and position fixed for fixed positioning */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+       
+    }
+    
+    /* Header Content Styles */
+    
+    header > div {
+        /* Use flexbox for layout, add left margin, and set background color */
+        display: flex;
+        margin-left: 10px;
+        background-color: #040805;
+
+    }
+    
+    #logo {
+        /* Set width, height, and background image for the logo */
+        width: 120px;
+        height: 50px;
+        padding-bottom: 25px;
+        background-image: url(../assets/images/logo-main.png);
+        background-size: cover;
+    }
+    
+    #tagline {
+        /*Remove tag line for mobile view*/
+        display: none; 
+    }
+
+    .blaise {
+        color: #ffffff; /* change the text color to #bf1404 */
+        font-weight: bolder;
+        font-family: Prata;
+    }
+
+    /* Navigation styles */
+    
+    nav {
+        /* Set width, height, background color, and hide overflow */
+        /* width: 50%;
+        height: 100%;
+        background-color: #040805;
+        overflow: hidden; */
+        display: none;
+    }
+    
+    nav > ul {
+        /* Set height, use flexbox for layout, and style text */
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #040805;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        /* Set position to relative for submenu items positions */
+        position: relative;
+        border-top: #F28705 solid 1px;
+        border-bottom: #F28705 dashed 5px;
+
+
+    }
+    
+    nav li {
+        /* Set width for list items and center text */
+        width: 100%;
+        text-align: center;
+    }
+    
+    li a {
+        /* Style for navigation links */
+        display: block;
+        color: white;
+        padding: 14px;
+        text-decoration: none;
+    }
+    
+    li:hover {
+        /* Style for navigation links on hover */
+        background-color: #F28705;
+        border-radius: none; /* Note: 'none' is not a valid value for border-radius */
+    }
+    
+    #burger {
+        /* Style for the burger icon */
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        background-color: #040805; 
+        text-align: center; 
+        padding: 14px; 
+        color: #F28705; 
+        font-weight: bold;
+        cursor: pointer; /* Set cursor to pointer on hover */
+        transform: translateX(-50%); 
+    }
+    #close {
+       /* Style for the burger icon */
+       cursor: pointer;
+       position: absolute;
+       top: 25px;
+       right: 10px;
+       display: none;
+       background-color: #040805; 
+       text-align: center; 
+       padding: 14px; 
+       color: #F28705; 
+       font-weight: bold;
+       cursor: pointer; /* Set cursor to pointer on hover */
+       transform: translateX(-50%); 
+        
+    }
+    #burgerMenu {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #burgerMenu > Nav {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        background-color: white;
+        display: flex; 
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    
+    #burgerMenu a{
+        font-size: 28px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    #main {
+        width: 100%;
+        height: auto;
+        padding-top: 90px; /* Add padding to the top equal to the header height */
+        padding-bottom: 150px; /* Add padding to the bottom to prevent overlap with the footer */    
+        flex-grow: 1;/* Flex-grow to push footer to the bottom */
+
+    }
+    
+    
+    /* Hero Styles */
+    
+    .hero {
+        /* Flex container styles for centering content */
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Set maximum width, margin, padding, background color, border radius, and box shadow */
+        max-width: 100vw;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #AEBCBFBF;
+        border-radius: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hero h2 {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .hero p {
+        /* Set color, margin, font family, size, weight, line height, and text alignment for <p> in the Call to Action section */
+        color: #025959;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    /* Hero Button Styles */
+    
+    .hero-button {
+        /* Set margin, font size, and font weight for the Call to Action button */
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    .contact-intro h2 {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    legend {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        color: #ffffff;
+        padding: 5px 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+
+    }
+      
+    .contact-intro p {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        display: block;
+        margin-top: 0;
+        margin-bottom: 1px;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        transition: all 0.6s ease;
+      }
+
+      input[type=text]:focus {
+        border: 3px solid #F28705;
+    
+      }
+
+      .inputOnFocus {
+        background-color: #9c433b;
+      }
+      
+      input[type=button] {
+        /* width: 100%; */
+        background-color: #F28705;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+      }
+      
+      input[type=button]:hover {
+        background-color: #bf1404;
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f8f8;
+        resize: none;
+        margin-top: 10px;
+      }
+
+      .warning {
+        color: #ff8c00;
+      }
+    
+    /* Button Styles */
+    
+    .button {
+        /* Set styles for the button, including padding, font size, text decoration, color, background color, border radius, and transition */
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #F28705;
+        border-radius: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        border: none;
+    }
+    
+    .button:hover {
+        /* Set background color on hover for the button */
+        background-color: #bf1404;
+
+    }
+
+  
+    
+    
+    #nav-list {
+        flex-direction: column;
+        position: fixed;
+        top: 90px;
+        width: 50%;
+        height: 70%;
+        max-width: calc(100vh - 90px);
+        max-height: calc(100vh - 90px); /* Set a maximum height */
+        overflow-y: auto; /* Allow scrolling if the menu is taller than the viewport */
+        background-color: #040805;
+        display: none;
+        z-index: 1000;
+    }
+
+    #nav-list.active {
+        display: flex; /* Display the navigation list as flex when it has the 'active' class */
+    }
+
+    #nav-list li {
+        text-align: center;
+        width: 100%;
+    }
+
+    #nav-list li a {
+        display: block;
+        color: white;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    #nav-list li a span {
+        margin-right: 5px; /* Adjust spacing between the icon and text */
+        font-size: 18px; /* Adjust the font size of the icon */
+    }
+
+    .section-heading {
+        /* Set height, flex container styles for centering content, margin, font family, weight, size, and text alignment for section headings */
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 2%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+        text-shadow: #333;
+    }
+
+    #contact-section {
+        max-width: 650px;
+        display: none;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        padding: 32px 32px 24px;
+        background-color: #bf1404ab;
+        
+        position: absolute;
+        top: 50px;
+        left: -100vw;
+        transition: all 0.8s ease;
+     }
+
+     #contact-section.slideIn {
+        left: 0;
+     }
+
+     .contact-form {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+     }
+
+     
+
+    form {
+        width: 100%;
+        height: 150vh;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        gap: 10px;
+        padding: 30px 0;
+    }
+
+    /* Shake Animation */
+    .shake {
+        animation: shake 0.5s ease-in-out;
+      }
+      
+      @keyframes shake {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        25%, 75% {
+          transform: translateX(-5px);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+      }
+    
+/* Confirmation box style */
+    #confirmation {
+        width: 90vw;
+        height: 300px;
+        background-color: #f28705e1;
+        border-radius: 15px;
+
+        position: absolute;
+        left: 50%;
+        /* top: 50%; */
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+    }
+
+/* Confrmation close style */
+    #confirmationClose {
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        border-radius: 45px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-image: url(../assets/images/x-mark.png);
+        background-size: cover;
+    }
+
+    #confirmationText {
+        color: white;
+        justify-content: center;        
+        padding: 20px;
+        font-family: 'poppins';
+
+    }
+
+    footer {
+        width: 100%; /* Full width */
+        position: fixed; /* Fixed position */
+        bottom: 0; /* Align to the bottom */
+        background-color: #040805; /* Your desired background color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        padding: 10px 0; /* Padding for aesthetic spacing */
+        z-index: 1000; /* Ensure it's above other elements */
+    }
+    
+
+    #footerlogo{
+        width: 50px;
+        height: 50px;
+        background-image: url(../assets/images/logo.png);
+        background-size: cover;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    footer > div{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        align-items: center;
+        margin: auto;
+    }
+
+    footer > div >a{
+        text-decoration: none;
+        font-family: 'poppins';
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #FFFDF7;
+        margin-bottom: 12px;
+    }
+
+    footer > p {
+        text-decoration: none;
+        font-family: 'poppins';
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #FFFDF7;
+        padding-top: 32px;
+        padding-bottom: 40px;
+        border-top: 1px #6C6C6C solid;
+
+    }
+
+    footer > div >p{
+        text-decoration: none;
+        font-family: 'poppins';
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #FFFDF7;
+        margin-bottom: 12px;
+    }
+
+ 
+    #footer-nav a {
+        border-top: 1px #6C6C6C solid;
+    }
+}
+
+/* Media query for desktop screens with a breakpoint of 992px */
+@media (min-width: 650px) {
+
+    body {
+        /* Maintain the same font family */
+        font-family: Arial, sans-serif;
+        /* Set the body to take up the full width and height of the viewport */
+        width: 100%;
+        height: 100vh;
+        /* Set a background image */
+        background-image: url(../assets/images/Background.jpg);
+        background-size: cover;
+        /* Remove default margin and padding */
+        margin: 0;
+        padding: 0;
+        /* Set a background color and use border-box for box-sizing */
+        background-color: #f4f4f4;
+        box-sizing: border-box;
+    }
+
+    header {
+    /* Set header to take up full width, with a fixed height and a border at the bottom */
+    width: 100%;
+    height: 90px;
+    border-bottom: #ffffff solid 1px;        
+    background-color: #040805;
+    /* Use flexbox for layout, space-between for spacing, and position fixed for fixed positioning */
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    /* Set a higher z-index to ensure it stays on top of other elements */
+    z-index: 1000;
+        }
+
+    header > div {
+         /* Use flexbox for layout, add left margin, and set background color */
+        display: flex;
+        margin-left: 50px;
+        background-color: #040805;
+        }
+
+    #logo {
+        /* Increase the size of the logo and maintain the same background image */
+        width: 85px;
+        height: 85px;
+        /* width: 150px;
+        padding-left: 35px;
+        margin-top: 10px; */
+        background-image: url(../assets/images/logo.png);
+        background-size: cover;
+    }
+
+    #tagline {
+        /* Display the tagline for larger screens and maintain the same font family and color */
+        height: 85px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px; 
+        font-family: 'Poppins', sans-serif;
+        color: #F28705;
+    }
+
+    #tagline > h2 {
+        /* Set font family, weight, size, and color for tagline heading */
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #F28705;
+    }
+    
+    #tagline > p {
+        /* Set font family, weight, size, and color for tagline paragraph */
+        font-family: 'Poppins', sans-serif;
+        font-weight: 200;
+        font-size: 27px;
+        color: #F28705;
+    }
+
+
+
+    nav {
+        /* Increase the width of the navigation and maintain the same background color */
+        width: 70%;
+        background-color: #040805;
+        overflow: hidden;
+
+    }
+
+    nav > ul {
+        /* Set height, use flexbox for layout, and style text */
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* Increase the font size of the navigation links and maintain the same font family and color */
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: #040805;
+        /* Set position to relative for submenu items positions */
+        position: relative;
+    }
+
+    ul {
+        display: flex; /* Use flexbox for horizontal alignment */
+    }
+
+    li {
+        float: none;
+        /* Set width for list items and center text */
+        width: 100%;
+        text-align: center;
+    }
+
+    li a {
+        /* Increase the padding of the navigation links and maintain the same color and text decoration */
+        padding: 14px 20px;
+        color: white;
+        text-decoration: none;
+        /* border-left: 1px solid #F28705; */
+        display: block;
+    }
+
+    li:hover {
+        /* Style for navigation links on hover */
+        background-color: #f28705e1;
+    }
+
+    #burger {
+        /* Hide the burger icon for larger screens */
+        display: none; 
+    }
+
+    #main {
+        width: 100%;
+        height: auto;
+        margin-bottom: 100px;
+        /* Increase the padding at the top and bottom and maintain the same background color */
+        /* padding-top: 120px;
+        padding-bottom: 20px; */
+        flex: 1; /* Make the main section grow to fill the available space */
+        background-color: #f4f4f4b0;
+    }
+        
+    /* Hero Styles */
+
+    .hero {
+        /* Maintain the same font family and color in the hero section */
+        font-family: Prata;
+        color: #ffffff;
+        /* Flex container styles for centering content */
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Set maximum width, margin, padding, background color, border radius, and box shadow */
+        max-width: 100vw;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #AEBCBFBF;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+    
+    .hero h2 {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .hero p {
+        /* Set color, margin, font family, size, weight, line height, and text alignment for <p> in the Call to Action section */
+        color: #025959;
+        margin-bottom: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 35px;
+        text-align: center;
+    }
+        
+    /* Button Styles */
+    
+    .button {
+        /* Set styles for the button, including padding, font size, text decoration, color, background color, border radius, and transition */
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #F28705;
+        border-radius: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        border: none;
+    }
+    
+    .button:hover {
+        /* Set background color on hover for the button */
+        background-color: #bf1404;
+
+    }
+
+    .contact-intro h2 {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    legend {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        color: #ffffff;
+        padding: 5px 10px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        text-align: center;
+    }
+      
+    .contact-intro p {
+        /* Set color, font family, weight, size, and text alignment for the <h2> in the Call to Action section */
+        display: block;
+        margin-top: 0;
+        margin-bottom: 1px;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        box-sizing: border-box;
+        transition: all 0.6s ease;
+      }
+
+      input[type=text]:focus {
+        border: 3px solid #F28705;
+    
+      }
+
+      .inputOnFocus {
+        background-color: silver;
+      }
+      
+      input[type=button] {
+        /* width: 100%; */
+        background-color: #F28705;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+      }
+      
+      input[type=button]:hover {
+        background-color: #bf1404;
+      }
+
+      textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f8f8;
+        resize: none;
+        margin-top: 10px;
+      }
+
+      .warning {
+        color: #ff8c00;
+      }
+
+      .section-heading {
+        /* Set height, flex container styles for centering content, margin, font family, weight, size, and text alignment for section headings */
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 2%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        text-align: center;
+        text-shadow: #333;
+    }
+
+    
+
+    #contact-section {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        background-color: #bf1404ab;
+        border-radius: 10px;
+        margin-bottom: 150px;
+        margin-top: 20px;
+
+        position: absolute;
+        top: 50px;
+        left: -100vw;
+        transition: all 0.8s ease;
+     }
+
+     #contact-section.slideIn {
+        left: 0;
+        display: flex !important;
+     }
+
+ 
+
+     .contact-form {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+     }
+
+     
+
+    form {
+        width: 100%;
+        height: auto;
+        font-family: 'Poppins', sans-serif;
+        display: flexbox;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    /* Shake Animation */
+    .shake {
+        animation: shake 0.5s ease-in-out;
+      }
+      
+      @keyframes shake {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        25%, 75% {
+          transform: translateX(-5px);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+      }
+      
+    
+/* Confirmation box style */
+    #confirmation {
+        width: 90vw;
+        height: 300px;
+        background-color: #f28705e1;
+        border-radius: 15px;
+
+        position: absolute;
+        left: 50%;
+        /* top: 50%; */
+        transform: translate(-50%, -50%);
+        justify-content: center;
+        align-items: center;
+        display: none;
+
+    }
+
+/* Confrmation close style */
+    #confirmationClose {
+        width: 35px;
+        height: 35px;
+        background-color: white;
+        border-radius: 45px;
+        margin-top: 10px;
+        margin-left: 10px;
+        background-image: url(../assets/images/x-mark.png);
+        background-size: cover;
+    }
+
+    #confirmationClose:hover {
+        background-color: #ffffffaf;
+    }
+
+    #confirmationText {
+        color: white;
+        justify-content: center;        
+        padding: 50px;        
+        font-family: 'poppins';
+
+    }
+
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;/* Set width to full viewport width */      
+        background-color: #040805;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 150px;
+        
+    }
+
+    #footerlogo{
+        width: 50px;
+        height: 50px;
+        background-image: url(../assets/images/logo.png);
+        background-size: cover;
+      
+    }
+
+    footer > div{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    footer > div >a{
+        text-decoration: none;
+        font-family: 'poppins';
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #FFFDF7;
+        margin-bottom: 12px;
+    }
+
+    footer > div >p{
+        text-decoration: none;
+        font-family: 'poppins';
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #FFFDF7;
+        margin-bottom: 12px;
+    }
+
+    footer > p {
+        text-decoration: none;
+        font-family: 'poppins';
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #FFFDF7;
+        padding-top: 32px;
+        padding-bottom: 40px;
+        border-top: 1px #6C6C6C solid;
+
+    }
+}
+

@@ -1,0 +1,224 @@
+/* Styles for the About section */
+#about {
+    width: 100%; /* Make the section full width */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding-top: 40px; /* Add space at the top */
+    padding-bottom: 20px; /* Add space at the bottom */
+    background-color: #000000c4; /* Semi-transparent black background */
+    
+
+    position: absolute;
+    left: 0;
+    transition: all 0.8s ease;
+}
+
+#about.slideOut {
+    left: 100vw;
+}
+
+/* Styles for the main heading in the About section */
+#about h1 {
+    color: #F28705; /* Set heading color to orange */
+    padding: 5px 10px; /* Add padding around the heading */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 700; /* Set font weight to bold */
+    font-size: 35px; /* Set font size */
+    text-align: center; /* Center align the heading */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add text shadow */
+}
+
+/* Styles for the subheading in the About section */
+#about h2 {
+    color: #F28705; /* Set subheading color to orange */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 400; /* Set font weight */
+    font-size: 30px; /* Set font size */
+    text-align: center; /* Center align the subheading */
+    margin-bottom: 10px; /* Add space at the bottom */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add text shadow */
+}
+
+/* Styles for the hero section in the About page */
+.about-hero {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Add space at the bottom */
+    text-align: center; /* Center align text */
+    max-width: 100vw; /* Set maximum width */
+    margin: 10px auto; /* Center the hero section */
+    padding: 20px; /* Add padding */
+}
+
+/* Styles for the image in the About section */
+.about-img {
+    width: 300px; /* Set image width */
+    height: 300px; /* Set image height */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Add space at the bottom */
+    background-image: url(../assets/images/contact-image.jpg); /* Set image background */
+    background-size: cover; /* Scale the background image */
+}
+
+/* Styles for the text in the About section */
+.about-text {
+    max-width: 50vw; /* Set maximum width */
+    text-align: left; /* Left align the text */
+    margin-left: 50px; /* Add space on the left */
+    color: #fff; /* Set text color to white */
+}
+
+/* Styles for the "Why Hire Me" section */
+.whyHireMe {
+    text-align: center; /* Center align the text */
+    max-width: 100vw; /* Set maximum width */
+    margin: 50px auto; /* Center the section */
+    padding: 20px; /* Add padding */
+}
+
+/* Styles for the text in the "Why Hire Me" section */
+.whm-text {
+    color: #fff; /* Set text color to white */
+}
+
+/* Styles for the services section */
+.services {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    max-width: 100%; /* Set maximum width */
+    margin-bottom: 50px; /* Add space at the bottom */
+    padding: 20px; /* Add padding */
+}
+
+/* Styles for each service item */
+.service {
+    display: flex; /* Use flexbox for layout */
+    flex: 0 0 auto; /* Allow items to grow and shrink */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items horizontally and vertically */
+    width: 205px; /* Set width */
+    height: 170px; /* Set height */
+    border-radius: 10px;
+    background: #fff; /* Set background color to white */
+    margin: 20px; /* Add margin */
+    box-shadow: 0 0px 10px rgba(71,71,71,.2); /* Add box shadow */
+}
+
+/* Styles for the image in each service item */
+.service img {
+    width: 50px; /* Set image width */
+    height: 50px; /* Set image height */
+    margin-bottom: 10px; /* Add space at the bottom */
+}
+
+/* Styles for the heading in each service item */
+.service h3 {
+    color: #F28705; /* Set heading color to orange */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 300; /* Set font weight */
+    font-size: 25px; /* Set font size */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 10px; /* Add space at the bottom */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add text shadow */
+}
+
+/* Styles for the paragraph in each service item */
+.service p {
+    padding: 5px; /* Add padding */
+    margin-top: 5px; /* Add space at the top */
+    text-align: center; /* Center align the text */
+}
+
+/* Styles for the software skills section */
+.software-skills {
+    /* width: 100%; */
+    max-width: 100vw; /* Set maximum width */
+    /* margin-top: 20px; Add space at the top */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+/* Styles for the list of software skills */
+.software-list {
+    display: flex; /* Use flexbox for layout */
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    list-style-type: none; /* Remove bullet points */
+    padding: 10px 30px; /* Remove padding */
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+/* Styles for each software skill item */
+.software-item {
+    margin-right: 20px; /* Add space between items */
+    width: 50px;
+}
+
+/* Styles for the images in each software skill item */
+.software-item img {
+    width: 50px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove margin */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+/* Hover effect for software skill images */
+.software-item img:hover {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+
+/* Media query for mobile screens with a breakpoint of 650px */
+@media (max-width: 650px) {
+    /* Styles for the services section on mobile */
+    .services {
+        display: flex; /* Use flexbox for layout */
+        overflow-x:auto; /* Enable horizontal scrolling */
+        /* Reset grid properties for mobile view */
+        grid-template-columns: auto; /* Reset grid columns for mobile */
+        gap: 0; /* Remove gap for mobile */
+        padding: 0; /* Remove padding for mobile */
+        justify-content: flex-start; /* Adjust content alignment */
+    }
+
+    .service p {
+        max-width: 100%; /* Set maximum width to 100% */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal; /* Allow text to wrap */
+    }
+
+    .software-skills {
+        overflow-x: auto; /* Enable horizontal scrolling */
+    }
+    
+    .software-list {
+        overflow-x: auto; /* Hide horizontal overflow */
+    }
+    
+    .about-hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        text-align: center;
+        max-width: 100vw;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .about-text {
+        max-width: 100vw;
+        text-align: center;
+        margin: 0;
+    }
+
+
+}

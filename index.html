@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- CSS Reset -->
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css"/>
+
+            <!-- External CSS -->
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+            <link rel="stylesheet" type="text/css" href="css/about.css" />
+            <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+
+            <!-- Import google fonts -->
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Prata&display=swap"
+            rel="stylesheet"/>
+        <title>Portfolio Project</title>
+
+    </head>
+    <body>
+        <header>
+            <div>
+                <figure id="logo"></figure>
+                <div id="tagline">
+                    <h2>CHIDERA</h2>
+                    <p>BLAISE</p>
+                </div>
+            </div>
+            <nav>
+                <ul id="nav-list" class="active">
+                    <li><a class="navLinks">About</a></li>
+                    <li><a class="navLinks">Gallery</a></li>
+                    <li><a class="navLinks">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="burger">&#9776; Menu</div>
+            <div id="close">&#88; Close</div>
+    </header>
+    <section id="burgerMenu">
+        <nav>
+            <ul id="nav-list" class="active">
+                <li><a class="navLinks">About</a></li>
+                <li><a class="navLinks">Gallery</a></li>
+                <li><a class="navLinks">Contact</a></li>
+            </ul>
+        </nav>
+       </section>
+        <main id="main">
+            <!-- <section class="hero">
+                <h2>My name is <span class="blaise">Chidera Blaise</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex.</p>
+                <div class="hero-button">
+                    <a href="#contact-section" class="button">Contact Me</a>
+                </div>
+            </section> -->
+            <section id="about">
+                <h1>About Me</h1>
+                <div class="about-hero">
+                    <figure class="about-img"></figure>
+                    <div class="about-text">
+                        <p>
+                            As a multi-faceted professional, I blend the realms of graphic design, Microsoft 365 technical support, 
+                            and photography to craft captivating experiences. With a keen eye for detail and a passion for creativity, 
+                            I strive to bring visions to life through my work. Whether it's designing visually stunning graphics, 
+                            troubleshooting Microsoft 365 services, or capturing moments through the lens, I am dedicated to delivering excellence in every project.
+ 
+                        </p>
+                    </div>
+                </div>
+                <div class="whyHireMe">
+                    <h2>Why Hire Me</h2>
+                    <p class="whm-text">
+                        I bring a unique combination of skills and experiences to the table that make me an ideal candidate for your needs. 
+                        With a solid background in graphic design, expertise in Microsoft 365 services, and a creative flair honed through photography, 
+                        I offer a comprehensive skill set to tackle diverse challenges. My commitment to quality, attention to detail, and adaptability 
+                        ensure that I not only meet but exceed expectations, delivering results that resonate with your audience.
+                    </p>
+                </div>
+                
+                <h2>Services</h2>
+                <div class="services">
+                    <div class="service">
+                        <img src="./assets/images/services/logoDesign.png" alt="Logo Design">
+                        <h3>Logo Design</h3>
+                        <p>Crafting unique and memorable logos for businesses and brands.</p>
+                    </div>
+                    <div class="service">
+                        <img src="./assets/images/services/printDesign.png" alt="Print Design">
+                        <h3>Print Design</h3>
+                        <p>Creating printed materials such as posters, business cards, etc.</p>
+                    </div>
+                    <div class="service">
+                        <img src="./assets/images/services/webDesign.png" alt="Web Design">
+                        <h3>Web Design</h3>
+                        <p>Designing user-friendly websites that reflect the client's brand.</p>
+                    </div>
+                    <div class="service">
+                        <img src="./assets/images/services/illustration.png" alt="Illustration">
+                        <h3>Illustration</h3>
+                        <p>Providing custom illustrations for magazines, digital media, etc.</p>
+                    </div>
+                    <div class="service">
+                        <img src="./assets/images/services/photography.png" alt="Photography">
+                        <h3>Photography</h3>
+                        <p>Providing custom illustrations for magazines, digital media, etc.</p>
+                    </div>
+                    <!-- Can repeat for other Graphic Design services -->
+                </div>
+                <h2>Software Skills</h2>               
+                <div class="software-skills">                    
+                    <ul class="software-list">
+                        <li class="software-item"><img src="./assets/images/skills/illustrator.jpg" alt="Adobe Illustrator"></li>
+                        <li class="software-item"><img src="./assets/images/skills/photoshop.jpg" alt="Adobe Photoshop"></li>
+                        <li class="software-item"><img src="./assets/images/skills/indesign.jpg" alt="Adobe Indesign"></li>
+                        <li class="software-item"><img src="./assets/images/skills/premierPro.jpg" alt="Adobe Premiere Pro"></li>
+                        <li class="software-item"><img src="./assets/images/skills/afterEffects.jpg" alt="Adobe After Effects"></li>
+                        <li class="software-item"><img src="./assets/images/skills/audition.jpg" alt="Adobe Audition"></li>
+                        <li class="software-item"><img src="./assets/images/skills/lightroom.jpg" alt="Adobe Lightroom"></li>
+                    </ul>
+                </div>
+                
+            </section>
+            <section id="gallery">
+                <div id="gallery-container">
+                    <h2> My Gallery</h2>
+                    <div id="gallery-grid">
+                        <figure class="gallery-item1">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1303.jpg" alt="Chess image within the 'A Chess Odyssey' Photo series">
+                            <figcaption>Chess Faction</figcaption>
+                        </figure>
+                        <figure class="gallery-item2">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1324.jpg" alt="Chess image within the 'A Chess Odyssey' Photo series">
+                            <figcaption>The King</figcaption>
+                        </figure>
+                        <figure class="gallery-item3">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1425.jpg" alt="Chess image within the 'A Chess Odyssey' Photo series">
+                            <figcaption>Royal Union</figcaption>
+                        </figure>
+                        <figure class="gallery-item4">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1432.jpg" alt="Chess image within the 'A Chess Odyssey' Photo series">
+                            <figcaption>The Queen</figcaption>
+                        </figure>
+                        <figure class="gallery-item5">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1057.jpg" alt="Sound image within the '5 Senses' Photo series">
+                            <figcaption>Feel the Sound</figcaption>
+                        </figure>
+                        <figure class="gallery-item6">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1484.jpg" alt="Chess image within the 'A Chess Odyssey' Photo series">
+                            <figcaption>The Pawn</figcaption>
+                        </figure>
+                        <figure class="gallery-item7">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1618.jpg" alt="Chess image within the 'A Chess Odyssey' Photo series">
+                            <figcaption>Checkmate</figcaption>
+                        </figure>
+                        <figure class="gallery-item8">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1449.jpg" alt="Chess image within the 'A Chess Odyssey' Photo series">
+                            <figcaption>The Face-off</figcaption>
+                        </figure>
+                        <figure class="gallery-item9">
+                            <img class="gallery-img" src="./assets/images/gallery/IMG_1086.jpg" alt="Touch image within the '5 Senses' Photo series">
+                            <figcaption>Feel my Touch</figcaption>
+                        </figure>
+                    </div>
+                </div>    
+            </section>
+            <section id="contact-section">
+                <form class="contact-form" method="post" action="/">
+                    <div class="contact-intro">
+                        <legend>Contact Me</legend>
+                        <p>
+                            You've got questions, I've got answers to anything regarding my portfolio.
+                        </p>
+                        </div>
+                    <fieldset>
+                        <label for="fname">First name *</label>
+                        <input id="fname" class="inputs" type="text" placeholder="Your first name.." required>
+                        <p id="warningMessage" class="warning"></p> 
+                    </fieldset>
+                    <fieldset>
+                        <label for="lname">Last name *</label>
+                        <input id="lname" class="inputs" type="text" placeholder="Your last name.." required>
+                        <p id="warningMessage" class="warning"></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="email">Email Address *</label>
+                        <input id="email" class="inputs" name="email" type="text" placeholder="Your email address.." required>
+                        <p id="warningMessage" class="warning"></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="textarea">Comment *</label>
+                        <textarea id="comments" class="inputs" name="comments" cols="30" rows="10" placeholder="Leave your comments here.." required></textarea>
+                        <p id="warningMessage" class="warning"></p>
+                    </fieldset>
+
+                    <input id="submitBTN" class="button" type="submit" value="Submit">
+            </form>
+            <div id="confirmation">
+                <figure id="confirmationClose"></figure>
+                <p id="confirmationText"></p>
+            </div>
+        </section>
+		</main>
+        <footer>
+            <div>
+                <a href="#main">
+                <figure id="footerlogo"></figure>
+                </a>
+                <p>
+                © Copyright 2024. Designed and deployed by Chidera Blaise.
+                </p>
+            </div>    
+        </footer>
+        <!-- Audio -->
+        <audio id="focusAudio" src="assets/audio/swoosh-low.mp3"></audio>
+
+        <!-- JS -->
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
